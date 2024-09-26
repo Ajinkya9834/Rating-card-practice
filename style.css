@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+}
+
+body{
+    background-color:hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Overpass", sans-serif;
+
+
+}
+.header-color, .rating-header{
+    color: white;
+    margin-bottom: 20px;
+}
+.font{
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 20px;
+}
+#rate-color{
+    color: hsl(25, 97%, 53%);
+    padding: 4px;
+}
+.rating-card, .thank-you-card{
+    width: 24%;
+    background-color:hsl(213, 19%, 18%);
+    padding: 28px;
+    border-radius: 20px;
+}
+
+.star-icon{
+    width: 30px;
+    height: 30px;
+    background-color: hsl(215, 20%, 23%);
+    border-radius: 50%;
+    margin-bottom: 30px;
+
+}
+.star-icon > img{
+    width: 14px;
+    height: 14px;
+    margin-left: 8px;
+    margin-top: 8px;
+        
+}
+ .rating-numb > p{
+    width: 35px;
+    height: 35px;
+    background-color: hsl(215, 20%, 23%);
+    border-radius: 50%;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 35px;
+    
+}
+.rating-numb > p:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.ratings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.submit-btn > button{
+    width: 100%;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: medium;
+    border-radius: 20px;
+    border: none;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(216, 12%, 8%);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.submit-btn > button:hover{
+    background-color: white;
+}
+
+.thank-you-img{
+    text-align: center;
+}
+
+.rating{
+    width: 50%;
+    text-align: center;
+    border-radius: 25px;
+    background-color: hsl(215, 20%, 23%); 
+    margin: auto;
+    margin-top: 28px;
+}
+.thank-you{
+    text-align: center;
+    margin-top: 28px;
+}
+
+@media (max-width:426px){
+    .rating-card, .thank-you-card{
+        width: 70%;
+    }
+}
+
+@media (min-width:427px) and (max-width:769px) {
+    .rating-card, .thank-you-card{
+        width: 50%;
+    }
+}
